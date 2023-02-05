@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App || By :- Arya Swaroop</title>
+    <!-- link CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <h1 style="font-size: 30px;">&#128075;</h1> -->
+    <h1 style="color: white;">Hii !<span style="font-size: 30px;">&#128075;</span> Welcome Back</h1>
+    <div class="container">
+        <div id="addTask">
+            <div id="newTask">
+                <input type="text" id="userInput" placeholder="task to be done....">
+                <input type="hidden" id="saveIndex">
+                <button id="push">Add Task</button>
+                <button id="save" style="display: none;">save</button>
+            </div>
+        </div>
+        <div id="taskList">
+            <div id="searchTask">
+                <button id="deleteall">Delete All</button>
+                <input type="text" id="searchBar" placeholder="Search tasks....">
+            </div>
+            <div id="tasks">
+                <div id="task">
+                    <span id="taskName">
+                        1. This is a dummy task for demo
+                    </span>
+                    <div id="actions">
+                        <button id="edit"><i class="fa-solid fa-pen-to-square"></i> Edit</button>
+                        <button id="delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Warning message -->
+    <div id="snackBar">Please Enter a Task </div>
+    <script src="javaScript.js"></script>
+</body>
+</html>
